@@ -1,4 +1,4 @@
-const {default: User } = require("../models/userModel.js");
+const User = require("../models/userModel.js");
 
 const router = require("express").Router();
 
@@ -34,4 +34,4 @@ router.post("/login", async(req, res) => {
     }
 });
 
-module.exports = router; 
+module.exports = router;
