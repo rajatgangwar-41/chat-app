@@ -11,7 +11,7 @@ const userSchema = new mongoose.Schema({
     newMessages: {type: Object, default: {}},
     status: {type: String, default: "Online"}
 }, {
-    minimize: false
+    minimize: false,
     timestamps: true
 });
 
