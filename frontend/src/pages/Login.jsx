@@ -1,8 +1,35 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-
+import React, { useState } from 'react'
+import { useContext } from 'react';
+import {Link, useNavigate} from 'react-router-dom'
+import { appContext } from '../context/appContext.js';
+import { useLoginUserMutation } from '../services/appApi.js';
 
 const Login = () => {
+
+  const navigate = useNavigate();
+  
+  const {socket} = useContext(appContext);
+
+  const[email, setEmail] = useState('');
+  const[password, setPassword] = useState('');
+  const[loginUser, {isLoading, error}] = useLoginUserMutation();
+  
+  
+  const handleLogin = (e) => {
+    e.preventDefault();
+    
+    //login user
+    loginUser({email, password}).then(({data}) => {
+      if(data) {
+        console.log(data);
+
+        socket.emit("new-user");
+
+        navigate("/chat");
+      }
+    })
+  }
+
   return (
     <div className='login-container'>
       <div className="login-row">
