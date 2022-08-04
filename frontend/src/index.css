@@ -320,3 +320,69 @@ label svg:hover {
 .rooms button:disabled:hover {
   color: #ffffff !important;
 }
+
+.membersImage {
+  width: 25px;
+  height: auto;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.icon {
+  margin-left: 5px;
+}
+
+.badgeNumber {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  font-size: 30px;
+  color: #000000;
+  text-shadow: 0 0 2px #ffffff;
+}
+
+.dateMessage {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.messageView {
+  display: block;
+  margin: 15px 0 15px auto;
+  padding: 10px 15px;
+  box-shadow: 0 0 5px #e2e2e2;
+  width: max-content;
+}
+
+.incomingMessage {
+  padding: 10px 15px;
+  box-shadow: 0 0 5px #e2e2e2;
+  width: max-content;
+}
+
+.userImage {
+  width: 60px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.message-from {
+  display: flex;
+  align-items: center;
+}
+
+.userName {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.messageContent {
+  margin: 10px 0;
+  font-size: 20px;
+}
+
+.message-all {
+  padding: 15px;
+}
