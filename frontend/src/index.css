@@ -1,13 +1,40 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: myFont;
+    src: url(../public/assets/fonts/IndieFlower-Regular.ttf);
+  }
+  
+  body {
+    font-family: myFont;
+  }
+  
+  .navbar-container {
+    height: 70px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    text-transform: uppercase;
+    text-shadow: 0 0 2px #000000;
+    font-size: 50px;
+  }
+  
+  .navbar-row a {
+    margin: 0 20px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  
+  .active {
+    border-bottom: 3px solid #000000;
+  }
