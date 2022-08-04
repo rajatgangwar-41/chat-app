@@ -1,6 +1,7 @@
 import React from 'react'
-import MessageBox from '../components/MessageBox'
 import Sidebar from '../components/Sidebar'
+import MessageBox from '../components/MessageBox'
+
 
 const Chat = () => {
   return (
