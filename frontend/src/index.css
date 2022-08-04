@@ -189,3 +189,134 @@ label svg:hover {
 .chat-col:last-child {
   flex: 2;
 }
+
+.rooms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 20px;
+}
+
+.message-form {
+  display: flex;
+  margin: 10px 0;
+}
+
+.input-message {
+  height: 40px;
+  width: calc(100% - 80px);
+  border: 1px solid #000000;
+  outline: none;
+  padding: 0 15px;
+  letter-spacing: 1.3px;
+}
+
+.message-form button {
+  width: 80px;
+  height: 40px;
+  background-color: #000000;
+  color: #ffffff;
+  box-shadow: 0 0 2px #000000;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.message-form button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.message-all {
+  height: calc(100vh - 150px);
+  box-shadow: 0 0 10px #bebebe;
+  overflow-y: auto;
+}
+
+.logout {
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 10px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-size: 20px;
+  font-family: myFont;
+}
+
+.logout:hover {
+  border-bottom: 3px solid #000000;
+}
+
+.navbar-row.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box img {
+  width: 42px;
+  height: auto;
+  border-radius: 50%;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.please-login {
+  text-align: center;
+}
+
+.margin {
+  margin: 40px 0;
+}
+
+.sidebar h2 {
+  margin-bottom: 10px;
+}
+
+
+.activeRoom {
+  background-color: #ff0000 !important;
+}
+
+.activeRoom:hover {
+  background-color: #ffffff !important;
+}
+
+.rooms span.badge {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  font-size: 30px;
+  color: #000000;
+  text-shadow: 0 0 2px #ffffff;
+}
+
+.rooms button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 2px #000000;
+  transition: all 0.5s;
+  border: none;
+}
+
+.rooms button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.rooms button:disabled {
+  background-color: #bebebe !important;
+  cursor: not-allowed;
+}
+
+.rooms button:disabled:hover {
+  color: #ffffff !important;
+}
